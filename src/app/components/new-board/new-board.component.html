@@ -3,9 +3,11 @@
 <mat-dialog-content>
   <mat-form-field appearence="standard">
     <mat-label>Enter the title</mat-label>
-    <input matInput /> </mat-form-field
-></mat-dialog-content>
+    <input [(ngModel)]="title" matInput />
+  </mat-form-field>
+  {{ title }}
+</mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button (click)="close()">Cancel</button>
-  <button mat-raised-button>Create</button>
+  <button mat-raised-button (click)="create()">Create</button>
 </mat-dialog-actions>

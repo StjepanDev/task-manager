@@ -12,6 +12,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NewBoardComponent } from './components/new-board/new-board.component';
 import { MatInputModule } from '@angular/material/input';
+import { ViewBoardComponent } from './pages/view-board/view-board.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
     TopbarComponent,
     BoardsComponent,
     NewBoardComponent,
+    ViewBoardComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { MatInputModule } from '@angular/material/input';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
