@@ -1,1 +1,17 @@
-<p>view-board works!</p>
+<div class="container">
+  <div class="content-wrapper">
+    <button (click)="newCard()" mat-button class="new-button">New Card</button>
+    <div class="board-card">
+      <div class="title">Card Title</div>
+      <div class="checkboxes-container">
+        <mat-checkbox class="checkbox"> check me </mat-checkbox>
+        <mat-checkbox class="checkbox"> check me </mat-checkbox>
+        <mat-checkbox class="checkbox"> check me </mat-checkbox>
+      </div>
+      <div class="actions-center">
+        <button mat-button class="new-button">Edit</button>
+        <button mat-button class="delete-button">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

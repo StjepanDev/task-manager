@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { BoardsComponent } from './pages/boards/boards.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NewBoardComponent } from './components/new-board/new-board.component';
 import { MatInputModule } from '@angular/material/input';
 import { ViewBoardComponent } from './pages/view-board/view-board.component';
 import { FormsModule } from '@angular/forms';
+import { NewCardComponent } from './components/new-card/new-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     BoardsComponent,
     NewBoardComponent,
     ViewBoardComponent,
+    NewCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

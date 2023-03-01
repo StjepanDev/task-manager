@@ -4,9 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class BoardService {
-  constructor() {}
+  constructor() {
+    let data = localStorage.getItem('boards');
+    if (data != null) {
+      this.boards = JSON.parse(data);
+    }
+  }
 
-  boards: Array<any> = [];
+  public boards: Array<any> = [];
 
   public createBoard(title: string) {
     let newBoard = { title, cards: [] };
