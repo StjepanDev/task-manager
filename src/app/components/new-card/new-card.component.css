@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.task-input {
+  width: 88%;
+}

@@ -6,7 +6,7 @@ import { ViewBoardComponent } from './pages/view-board/view-board.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'boards' },
   { path: 'boards', component: BoardsComponent },
-  { path: 'view-board/:boardindex', component: ViewBoardComponent },
+  { path: 'view-board/:boardIndex', component: ViewBoardComponent },
 ];
 
 @NgModule({
